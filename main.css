@@ -11,9 +11,8 @@ body {
     font-style: italic;
 }
 
-.btn {
-    border: 1px solid powderblue;
-    padding: 10px;
+.mybutton {
+    padding: 15px;
     color: #f1c40f;
 }
 
