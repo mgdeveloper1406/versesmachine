@@ -11,13 +11,11 @@
   
   $( document ).ready(function() {
      
-     button.onclick = function () {
-         
-        for (var i = 0; i < quoteList.length; i++) {
-           quote.textContent = quoteList[i];
-           author.textContent = authorList[i];
-        } 
+         button.onclick = function () {
+           quote.textContent = quoteList[0];
+           author.textContent = authorList[0];
+         }
 
-     }
      
  });
+ 
