@@ -5,12 +5,19 @@
      var quote = document.getElementById("quote");
      
      var author = document.getElementById("author");
+     
+     var button = document.getElementById("switch");
 
   
   $( document ).ready(function() {
      
-     quote.textContent = quoteList[0];
-     author.textContent = authorList[0];
+     button.onclick = function () {
+         
+        for (var i = 0; i < quoteList.length; i++) {
+           quote.textContent = quoteList[0];
+           author.textContent = authorList[0];
+        } 
+
+     }
      
-     alert("Making sure jquerry still works");
  });
