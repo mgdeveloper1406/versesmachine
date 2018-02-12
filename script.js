@@ -21,18 +21,35 @@
      var author = document.getElementById("author");
      
      var button = document.getElementById("switch");
+     
+     var tweetBtn = document.getElementById("tweet_btn");
+     
+     var randomNumberBetween0and5;
+     
+     var tweetQuote;
+     
+     var tweetAuthor;
+     
 
   
   $( document ).ready(function() {
       
 
      button.onclick = function () {
-           var randomNumberBetween0and5 = Math.floor((Math.random() * 5) + 0);
+         
+           randomNumberBetween0and5 = Math.floor(Math.random() * quoteList.length);
            quote.textContent = quoteList[randomNumberBetween0and5];
            author.textContent = authorList[randomNumberBetween0and5];
-
+           tweetQuote = quoteList.split(quoteList[randomNumberBetween0and5]);
+           tweetAuthor = authorList.split(authorList[randomNumberBetween0and5]);
+           
 
      }
     
-
+  $(".twitter-share-button").click(function() {
+    $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + tweetQuote + tweetAuthor );
+    
+  });
+  
  });
+ 
