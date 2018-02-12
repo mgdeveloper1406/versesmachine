@@ -27,7 +27,7 @@
       
 
      button.onclick = function () {
-           var randomNumberBetween0and5 = Math.floor((Math.random() * 5) + 0);
+           var randomNumberBetween0and5 = Math.floor(Math.random() * quoteList.length);
            quote.textContent = quoteList[randomNumberBetween0and5];
            author.textContent = authorList[randomNumberBetween0and5];
 
