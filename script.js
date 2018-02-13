@@ -23,15 +23,17 @@
      var button = document.getElementById("switch");
     
      var randomNumberBetween0and5;
-     
-     
-     
-     
-     
 
   
   $( document ).ready(function() {
-      
+ 
+ 
+     //This is just in case the user wants to tweet the initial quote
+    var tweetInit = quote.textContent + " " + " - " + author.textContent;
+              $(".twitter-share-button").click(function() {
+    $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + tweetInit );
+    
+  });     
 
      button.onclick = function () {
          
@@ -47,12 +49,7 @@
   });
      }
     
-    //This is just in case the user wants to tweet the initial quote
-    var tweetInit = quote.textContent + " " + " - " + author.textContent;
-              $(".twitter-share-button").click(function() {
-    $(this).attr("href", 'https://twitter.com/intent/tweet?text=' + tweetInit );
-    
-  });
+
     
     
 
