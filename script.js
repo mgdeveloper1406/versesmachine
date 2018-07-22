@@ -6,7 +6,7 @@
         "'For I am the LORD your God who takes hold of your right hand and says to you : do not fear, I will help you.' ",
         "'If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him.'",
         "'You, by the help of your God, return; Observe mercy and justice, And wait on your God continually.'",
-        "'Now may the God of hope fill you with all joy and peace in believing, that you may abound in hope by the power of the Holy Spirit.'"
+        "'Now may the God of hope fill you with all joy and peace in believing, that you may abound in hope by the power of the Holy Spirit.'",
         ];
 
      var authorList = [
@@ -26,7 +26,7 @@
      
      var button = document.getElementById("switch");
     
-     var randomNumberBetween0and5;
+     var randomNumberBetween0andQuoteListlength;
      
      
 
@@ -44,9 +44,9 @@
 
      button.onclick = (function () {
          
-           randomNumberBetween0and5 = Math.floor(Math.random() * quoteList.length);
-           quote.innerHTML = quoteList[randomNumberBetween0and5] ;
-           author.innerHTML = authorList[randomNumberBetween0and5];
+           randomNumberBetween0andQuoteListlength = Math.floor(Math.random() * quoteList.length);
+           quote.innerHTML = quoteList[randomNumberBetween0andQuoteListlength] ;
+           author.innerHTML = authorList[randomNumberBetween0andQuoteListlength];
            var tweet = quote.textContent + " " + " - " + author.textContent;
         
         
