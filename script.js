@@ -5,7 +5,7 @@
         "'You, Lord, keep my lamp burning, my God turns my darkness into light.'",
         "'For I am the LORD your God who takes hold of your right hand and says to you : do not fear, I will help you.' ",
         "'If any of you lacks wisdom, let him ask God, who gives generously to all without reproach, and it will be given him.'",
-        "'You, by the help of your God, return; Observe mercy and justice, And wait on your God continually.'",
+        "'You, by the help of your God, return\; Observe mercy and justice, And wait on your God continually.'",
         "'Now may the God of hope fill you with all joy and peace in believing, that you may abound in hope by the power of the Holy Spirit.'",
         ];
 
